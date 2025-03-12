@@ -25,25 +25,43 @@ This project is a web application that allows users to analyze the sentiment and
 ## Project Architecture
 The project follows a structured architecture as follows:
 ```
+EVALUATE-NEWS-NLP-MAIN/
+├── node_modules/
+├── starter_project/
+│   ├── __test__/
+│   │   ├── formHandler.test.js
+│   │   └── nameChecker.test.js
+├── dist/
+├── assets/
+│   ├── bundle.js
+│   ├── index.html
+│   ├── main.js
+│   ├── service-worker.js
+│   └── workbox-9a84fccb.js
 ├── src/
 │   ├── client/
+│   │   ├── assets/
 │   │   ├── js/
 │   │   │   ├── formHandler.js
-│   │   │   ├── apiRequest.js
+│   │   │   └── nameChecker.js
 │   │   ├── styles/
-│   │   │   ├── main.scss
+│   │   │   ├── base.scss
+│   │   │   ├── footer.scss
+│   │   │   ├── form.scss
+│   │   │   ├── header.scss
+│   │   │   └── resets.scss
 │   │   ├── views/
-│   │   │   ├── index.html
-│   ├── server/
-│   │   ├── index.js
-│   │   ├── api.js
-│   ├── __test__/
-│   │   ├── testFormHandler.spec.js
+│   │   │   └── index.html
+│   │   └── index.js
+│   └── server/
+│       └── index.js
+├── .babelrc
+├── jest.config.js
+├── package-lock.json
+├── package.json
 ├── webpack.dev.js
 ├── webpack.prod.js
-├── package.json
-├── README.md
-├── .gitignore
+└── README.md
 ```
 
 ## Installation
