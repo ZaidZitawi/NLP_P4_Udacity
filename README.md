@@ -11,8 +11,6 @@ This project is a web application that allows users to analyze the sentiment and
 - [API Integration](#api-integration)
 - [Testing](#testing)
 - [Offline Functionality](#offline-functionality)
-- [Deployment](#deployment)
-- [License](#license)
 
 ## Features
 - Users can enter a URL to analyze the content of an article.
@@ -113,13 +111,6 @@ EVALUATE-NEWS-NLP-MAIN/
 - The site remains available even when offline.
 - Configured in `webpack.prod.js`.
 
-## Deployment
-- The project can be deployed using services like Netlify or Heroku.
-- Example deployment steps for Heroku:
-  ```sh
-  heroku create
-  git push heroku main
-  ```
-- Ensure environment variables are set up on the deployment platform.
+
 
 
