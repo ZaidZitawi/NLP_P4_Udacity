@@ -11,8 +11,6 @@ This project is a web application that allows users to analyze the sentiment and
 - [API Integration](#api-integration)
 - [Testing](#testing)
 - [Offline Functionality](#offline-functionality)
-- [Deployment](#deployment)
-- [License](#license)
 
 ## Features
 - Users can enter a URL to analyze the content of an article.
@@ -25,7 +23,7 @@ This project is a web application that allows users to analyze the sentiment and
 ## Project Architecture
 The project follows a structured architecture as follows:
 ```
-├── src/
+├── stater_project/
 │   ├── client/
 │   │   ├── js/
 │   │   │   ├── formHandler.js
@@ -37,8 +35,9 @@ The project follows a structured architecture as follows:
 │   ├── server/
 │   │   ├── index.js
 │   │   ├── api.js
-│   ├── __test__/
-│   │   ├── testFormHandler.spec.js
+├── __test__/
+│        ├── formHandler.test.js
+|        ├── nameChecker.test.js  
 ├── webpack.dev.js
 ├── webpack.prod.js
 ├── package.json
@@ -95,13 +94,6 @@ The project follows a structured architecture as follows:
 - The site remains available even when offline.
 - Configured in `webpack.prod.js`.
 
-## Deployment
-- The project can be deployed using services like Netlify or Heroku.
-- Example deployment steps for Heroku:
-  ```sh
-  heroku create
-  git push heroku main
-  ```
-- Ensure environment variables are set up on the deployment platform.
+
 
 
