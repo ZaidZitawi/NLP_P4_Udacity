@@ -1,0 +1,26 @@
+// This file sets the basic layout for the page
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 2; 
+  }
+  
+  section {
+    max-width: 800px; 
+    margin: 50px auto;
+    padding: 0 20px; 
+  }
+  
+  /* Media query for small devices */
+  @media (max-width: 600px) {
+    section {
+      margin: 20px auto; 
+      max-width: 100%;   
+    }
+  }
+  

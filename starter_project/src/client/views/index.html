@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Evaluate a News Article</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Header with centered logo -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+            <img src="../assets/wrong.png" alt="I am Sorry Logo" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main area with the form and results -->
+    <main>
+      <section>
+        <form id="urlForm">
+          <input id="name" type="text" name="url" placeholder="Enter URL" required />
+          <button id="submitButton" type="submit">Submit</button>
+        </form>
+      </section>
+      <section>
+        <strong>Form Results:</strong>
+        <div id="results"></div>
+      </section>
+    </main>
+
+    <!-- Footer with a simple copyright message -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 I am Sorry Company For Pligarism. All rights reserved I Swear, WALLAHI.</p>
+      </div>
+    </footer>
+
+    <!-- Service Worker registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/service-worker.js')
+            .then(() => console.log('Service Worker registered'))
+            .catch((err) => console.log('Service Worker registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>

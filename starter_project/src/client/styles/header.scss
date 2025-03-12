@@ -1,0 +1,25 @@
+// This file styles the header
+
+.header-container {
+    background: #333;       
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+  }
+  
+  .logo img {
+    max-width: 75px; 
+  }
+  
+  /* Media query for small devices */
+  @media (max-width: 600px) {
+    .header-container {
+      padding: 10px; // Reduce padding on mobile
+    }
+    
+    .logo img {
+      max-width: 50px; 
+    }
+  }
+  

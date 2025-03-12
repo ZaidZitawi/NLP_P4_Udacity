@@ -1,0 +1,18 @@
+// This file styles the footer
+
+.footer-container {
+    background: #333;       
+    color: #fff;            
+    text-align: center;      
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  /* Media query for small devices */
+  @media (max-width: 600px) {
+    .footer-container {
+      padding: 10px;   
+      font-size: 12px; 
+    }
+  }
+  
